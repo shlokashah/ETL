@@ -41,7 +41,7 @@
   color: white;
   transform: rotateY(180deg);
 }
-<style>
+
 *{
   box-sizing: border-box;
 }
@@ -95,3 +95,4 @@ body {
     max-width: 100%;
   }
 }
+
