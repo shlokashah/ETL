@@ -1,42 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="660954d5-93f6-4b77-b8fe-2540ded92656" name="Default" comment="Added 'main' and models">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/urls.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/aos.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/flaticon.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/gijgo.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/nice-select.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/owl.carousel.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/slick.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/style.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/swiper.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/css/themify-icons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/css/all.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-brands-400.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-brands-400.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-brands-400.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-brands-400.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-regular-400.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-regular-400.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-regular-400.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-regular-400.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-solid-900.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-solid-900.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-solid-900.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/main/fontawesome/webfonts/fa-solid-900.woff2" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/main/templates/base.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/header.html" afterPath="$PROJECT_DIR$/main/templates/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+    <list default="true" id="660954d5-93f6-4b77-b8fe-2540ded92656" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ETL/settings.py" afterPath="$PROJECT_DIR$/ETL/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ETL/urls.py" afterPath="$PROJECT_DIR$/ETL/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ETL/views.py" afterPath="$PROJECT_DIR$/ETL/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -646,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566987581788</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added 'main' and models">
+      <created>1567337240219</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567337240219</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
