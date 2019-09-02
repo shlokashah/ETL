@@ -1,0 +1,107 @@
+<html>
+<body>
+    {% extends 'header.html' %}
+    {% load crispy_forms_tags %}
+    {% block content %}
+    	<section class="blog_area section_padding">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-8 mb-5 mb-lg-0">
+	                    <div class="blog_left_sidebar">
+	                        <article class="blog_item">
+	                            <div class="blog_item_img">
+	                                <img class="card-img rounded-0" src="/static/img/blog/single_blog_1.png" alt="">
+	                                <a href="#" class="blog_item_date">
+	                                    <h3>1</h3>
+	                                </a>
+	                            </div>
+
+	                            <div class="blog_details">
+	                                <a class="d-inline-block" href="single-blog.html">
+	                                    <h2>EAT</h2>
+	                                </a>
+	                                <p>Rajasthani cuisine was influenced by both the war-like lifestyles of its inhabitants and the availability of ingredients in this arid region.Food that could last for several days and could be eaten without heating was preferred. Scarcity of water and fresh green vegetables have all had their effect on the cooking.</p>
+	                            </div>
+	                        </article>
+
+	                        <article class="blog_item">
+	                            <div class="blog_item_img">
+	                                <img class="card-img rounded-0" src="/static/img/blog/single_blog_2.png" alt="">
+	                                <a href="#" class="blog_item_date">
+	                                    <h3>2</h3>
+	                                </a>
+	                            </div>
+
+	                            <div class="blog_details">
+	                                <a class="d-inline-block" href="single-blog.html">
+	                                    <h2>Fairs And Festivals</h2>
+	                                </a>
+	                                <p>Rajasthan packs the essence of Incredible India in 1 state. And the experience of Rajasthan is never complete unless you have a taste of the myriad fairs and festivals that it has to offer. They are a celebration of life, culture, heritage, and nature, in true Rajasthani style</p>
+	                            </div>
+	                        </article>
+
+	                        <article class="blog_item">
+	                            <div class="blog_item_img">
+	                                <img class="card-img rounded-0" src="/static/img/blog/single_blog_3.png" alt="">
+	                                <a href="#" class="blog_item_date">
+	                                    <h3>3</h3>
+	                                </a>
+	                            </div>
+
+	                            <div class="blog_details">
+	                                <a class="d-inline-block" href="single-blog.html">
+	                                    <h2>Shopping</h2>
+	                                </a>
+	                                <p>Shopping in Rajasthan is about colorful trinkets, leather goods, spices and even royal jewelry; which makes it one of the best things to do in Rajasthan. The state has made the world go gaga over its artistry, along with its splendid monuments that speak of a legendary past. People come here from across the world, and make their way to home with double the baggage.</p>
+	                            </div>
+	                        </article>
+
+	                        <article class="blog_item">
+	                            <div class="blog_item_img">
+	                                <img class="card-img rounded-0" src="/static/img/blog/single_blog_4.png" alt="">
+	                                <a href="#" class="blog_item_date">
+	                                    <h3>4</h3>
+	                                </a>
+	                            </div>
+	                            <div class="blog_details">
+	                                <a class="d-inline-block" href="single-blog.html">
+	                                    <h2>Luxury On Wheels</h2>
+	                                </a>
+	                                <p>In just 8 days your traverse across the huge terrain of Rajasthan and Agra and soak in the culture while being our pampered guest. You get, spacious Deluxe cabins with attached bathrooms, a personal butler, amenities that include 2 restaurants, a lounge bar and a spa.</p>
+	                            </div>
+	                        </article>
+
+	                        <article class="blog_item">
+	                            <div class="blog_item_img">
+	                                <img class="card-img rounded-0" src="/static/img/blog/single_blog_5.png" alt="">
+	                                <a href="#" class="blog_item_date">
+	                                    <h3>5</h3>
+	                                </a>
+	                            </div>
+
+	                            <div class="blog_details">
+	                                <a class="d-inline-block" href="single-blog.html">
+	                                    <h2>Highlights</h2>
+	                                </a>
+	                                <p>The princely state of Rajasthan is famed for its glorious past, rich culture, and splendid heritage. The best palaces in Rajasthan – beautiful and grand – stand as testament to this fact. These palaces, their architecture, and their old walls tell stories of the glorious past of the state. Some of the palaces are so grand and royal that they’ve been converted into heritage hotels, so that tourists can get to experience the lifestyle of the royals.</p>
+	                            </div>
+	                        </article>
+	                    </div>
+	                </div>
+	                <div class="col-lg-4">
+	                        <aside class="single_sidebar_widget newsletter_widget">
+	                            <h4 class="widget_title">Newsletter</h4>
+	                            <form action="{% url 'main:blog' %}" method="post" enctype="multipart/form-data">
+	                                {% csrf_token %}
+	                                {{form|crispy}}
+	                                <br>
+	                                <input type="submit" class="btn btn-primary" value="Submit">
+	                            </form>
+	                        </aside>
+	                </div>
+	            </div>
+	        </div>
+    	</section>
+    {% endblock %}
+</body>
+</html>

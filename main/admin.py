@@ -4,3 +4,5 @@ from .models import *
 
 admin.site.register(Place)
 admin.site.register(Rating)
+admin.site.register(SendMessage)
+admin.site.register(NewsLetter)

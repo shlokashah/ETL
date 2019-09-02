@@ -12,3 +12,12 @@ class Rating(models.Model):
     place_visited = models.ForeignKey(Place,on_delete=models.CASCADE)
     comment = models.TextField(default="This was an awesome place!!")
     rate = models.IntegerField(default=5)
+
+class SendMessage(models.Model):
+	message = models.TextField(default="Enter Message")
+	name= models.TextField(default="Enter Your Name")
+	subject = models.CharField(max_length=50)
+	email = models.EmailField(max_length=254)
+
+class NewsLetter(models.Model):
+    email = models.EmailField(max_length=254)
