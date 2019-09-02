@@ -9,5 +9,6 @@ urlpatterns=[
 	path('blog/',views.blog,name="blog"),
 	path('jaipur/',views.jaipur,name="jaipur"),
 	path('jaisalmer/',views.jaisalmer,name="jaisalmer"),
-	path('jodhpur/',views.jodhpur,name="jodhpur")
+	path('jodhpur/',views.jodhpur,name="jodhpur"),
+	path('gallery/',views.gallery,name="gallery"),
 ]

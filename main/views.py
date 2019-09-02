@@ -38,3 +38,6 @@ def jaisalmer(request):
 
 def jodhpur(request):
 	return render(request,'jodhpur.html')
+
+def gallery(request):
+	return render(request,'gallery.html')
