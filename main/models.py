@@ -14,11 +14,17 @@ class Place(models.Model):
     cost = models.IntegerField(default=0)
     description = models.TextField(max_length=1000, blank=False, default="Awesome place!")
 
+    def __str__(self):
+        return self.main_place + ", " + self.sub_place
+
 class Rating(models.Model):
     place_visited = models.ForeignKey(Place,on_delete=models.CASCADE)
     username = models.TextField(max_length=30, default="Anonymous")
     comment = models.TextField(default="This was an awesome place!!", max_length=300)
     rate = models.IntegerField(default=5)
+
+    def __str__(self):
+        return self.place_visited.main_place + " by " + self.username
 
 class SendMessage(models.Model):
 	message = models.TextField(default="Enter Message")
