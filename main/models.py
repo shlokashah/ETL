@@ -11,11 +11,13 @@ class Place(models.Model):
     main_place = models.CharField(max_length=100)
     sub_place = models.CharField(max_length=200)
     image = models.ImageField(upload_to="images/", default="/static/img/logo.png")
+    cost = models.IntegerField(default=0)
+    description = models.TextField(max_length=1000, blank=False, default="Awesome place!")
 
 class Rating(models.Model):
-    # user = blah blah blah!
     place_visited = models.ForeignKey(Place,on_delete=models.CASCADE)
-    comment = models.TextField(default="This was an awesome place!!")
+    username = models.TextField(max_length=30, default="Anonymous")
+    comment = models.TextField(default="This was an awesome place!!", max_length=300)
     rate = models.IntegerField(default=5)
 
 class SendMessage(models.Model):

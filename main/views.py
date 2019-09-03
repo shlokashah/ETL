@@ -4,6 +4,7 @@ from django.db.models import *
 from . import forms
 from validate_email import validate_email
 from .forms import Message
+from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
@@ -41,6 +42,10 @@ def blog(request):
     else:
         form = forms.NewsLetterSubscribe()
     return render(request,'blog.html',{'form':form})
+
+def place(request, slug):
+    slug_places = Place.objects.filter(sub_place__contains=slug)
+    return render(request, "place.html", {"places":slug_places.all()})
 
 def jaipur(request):
     return render(request,'jaipur.html')

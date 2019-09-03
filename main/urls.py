@@ -11,4 +11,5 @@ urlpatterns=[
 	path('jaisalmer/',views.jaisalmer,name="jaisalmer"),
 	path('jodhpur/',views.jodhpur,name="jodhpur"),
 	path('gallery/',views.gallery,name="gallery"),
+	path('place/<slug>/', views.place, name="place")
 ]
