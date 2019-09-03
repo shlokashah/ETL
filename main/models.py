@@ -1,7 +1,12 @@
 from django.db import models
 
 # Create your models here.
-
+'''
+TODO: 
+fix Place class to show appropriate places and images
+make comments visible for each tour, make template for each tour
+fix newsletter and sendmessage
+'''
 class Place(models.Model):
     main_place = models.CharField(max_length=100)
     sub_place = models.CharField(max_length=200)
