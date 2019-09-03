@@ -88,18 +88,7 @@
 	                        </article>
 	                    </div>
 	                </div>
-	                <div class="col-lg-4">
-	                        <aside class="single_sidebar_widget newsletter_widget">
-	                            <h4 class="widget_title">Newsletter</h4>
-	                            <form action="{% url 'main:blog' %}" method="post" enctype="multipart/form-data">
-	                                {% csrf_token %}
-	                                {{form|crispy}}
-	                                <br>
-	                                <input type="submit" class="btn btn-primary" value="Submit">
-	                            </form>
-	                        </aside>
-	                </div>
-	            </div>
+	              	            </div>
 	        </div>
     	</section>
     {% endblock %}

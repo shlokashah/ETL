@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Places</title>
+    <style>
+        .banner_part{
+            background-image: url("/static/img/home-banner.jpg")!important;
+        }
+    </style>
+</head>
+<body>
+    {% extends 'header.html' %}
+    {% block content %}
+    <div class="container">
+        {%  for place in places  %}
+                {% if forloop.counter0|divisibleby:3 %} <div class="row"> {%  endif %}
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single_ihotel_list">
+                            <img src="{{place.image.url}}" alt="">
+                            <div class="hotel_text_iner">
+                                <h3> <a href="#">{{place.main_place}}</a></h3>
+                                <div class="place_review">
+                                </div>
+                                <p>{{place.sub_place}}</p>
+                                <h5>From <span> Rupees {{place.cost}}</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                {%  if forloop.counter|divisibleby:3 or forloop.last %}</div><!-- row closing --><hr>{%  endif %}
+        {%  endfor %}
+    </div>
+{% endblock %}
+</body>
+</html>

@@ -25,9 +25,9 @@
                     <div class="col-lg-6 col-sm-12 col-md-6">
                         <div class="sub_menu_right_content">
                             <span>Top destinations</span>
-                            <a href="/place/jaipur/">Jaipur</a>
-                            <a href="/place/jodhpur">Jodhpur</a>
-                            <a href="/place/jaisalmer">Jaisalmer</a>
+                            <a href="{% url 'main:place' slug='jaipur' %}">Jaipur</a>
+                            <a href="{% url 'main:place' slug='jodhpur' %}">Jodhpur</a>
+                            <a href="{% url 'main:place' slug='jaisalmer' %}">Jaisalmer</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 col-md-6">
@@ -64,13 +64,13 @@
                                         <a class="nav-link" href="{% url 'main:gallery' %}">Gallery</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="packages.html">packages</a>
+                                        <a class="nav-link" href="{% url 'main:packages' %}">packages</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{% url 'main:blog' %}">Things To Do</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Popular Tour</a>
+                                        <a class="nav-link" href="{% url 'main:top' %}">Popular Tour</a>
                                     </li>
                                     <li>
                                         <a class="nav-link" href="{% url 'main:contact' %}">Contact</a>
@@ -96,12 +96,12 @@
                     <div class="single-footer-widget">
                         <h4>Discover Destination</h4>
                         <ul>
-                            <li><a href="#">Jodhpur, Rajasthan</a></li>
-                            <li><a href="#">Jaipur, Rajasthan</a></li>
-                            <li><a href="#">Jaisalmer, Rajasthan</a></li>
-                            <li><a href="#">Udaypur, Rajasthan</a></li>
-                            <li><a href="#">Bikaner, Rajasthan</a></li>
-                            <li><a href="#">Ajmer, Rajasthan</a></li>
+                            <li><a href="{% url 'main:place' slug='jodhpur' %}">Jodhpur, Rajasthan</a></li>
+                            <li><a href="{% url 'main:place' slug='jaipur' %}">Jaipur, Rajasthan</a></li>
+                            <li><a href="{% url 'main:place' slug='jaisalmer' %}">Jaisalmer, Rajasthan</a></li>
+                            <li><a href="{% url 'main:place' slug='udaipur' %}">Udaipur, Rajasthan</a></li>
+                            <li><a href="{% url 'main:place' slug='bikaner' %}">Bikaner, Rajasthan</a></li>
+                            <li><a href="{% url 'main:place' slug='ajmer' %}">Ajmer, Rajasthan</a></li>
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>

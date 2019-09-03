@@ -8,6 +8,7 @@ urlpatterns=[
 	path('contact/',views.contact,name="contact"),
 	path('blog/',views.blog,name="blog"),
 	path('gallery/',views.gallery,name="gallery"),
-	path('place/', views.all_places, name="all_places"),
-	path('place/<slug>/', views.place, name="place")
+	path('top_places/',views.top,name="top"),
+	path('place/<slug>/', views.place, name="place"),
+	path('packages/',views.packages,name="packages"),
 ]

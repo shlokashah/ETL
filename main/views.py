@@ -59,18 +59,13 @@ def place(request, slug):
     reviews = Rating.objects.filter(place_visited__sub_place__contains=slug)
     return render(request, "place.html", {"places":slug_places.all(), "reviews":reviews.all()})
 
-def all_places(request):
-    places = Place.objects.all()
-    return render(request, "place.html", {"places":places})
-
-# def jaipur(request):
-#     return render(request,'jaipur.html')
-#
-# def jaisalmer(request):
-#     return render(request,'jaisalmer.html')
-#
-# def jodhpur(request):
-#     return render(request,'jodhpur.html')
+def top(request):
+    top_places = Place.objects.annotate(avg_rate=Avg('rating')).order_by('-avg_rate')
+    return render(request, "order.html", {"places":top_places})
 
 def gallery(request):
     return render(request,'gallery.html')
+
+def packages(request):
+    places = Place.objects.all()
+    return render(request,"package.html",{'places':places})

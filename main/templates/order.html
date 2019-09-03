@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    {% extends 'header.html' %}
+        {% block content %}
+         <section class="top_place section_padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="section_tittle text-center">
+                            <h2>Top Places to visit</h2>
+                            <p>Rajasthan, also known as the ‘Land of Maharajas’, is seemingly one of the most Instagrammable places in India. Rows of majestic forts and palaces, centuries-old architecture, colourful façades, scenic lakes, rugged landscapes, lively festivals and culture, lip-smacking traditional cuisine, golden sunsets and sand dunes – this largest state of India is brimming with a vibrancy that will leave you clicking that shutter non-stop</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    {% for place in places reversed %}
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single_place">
+                                <img src="{{ place.image.url }}" alt="">
+                                <div class="hover_Text d-flex align-items-end justify-content-between">
+                                    <div class="hover_text_iner">
+                                        <a href="{% url 'main:packages' %}" class="place_btn">travel</a>
+                                        <h3>{{ place.main_place }}</h3>
+                                        <p>{{  place.sub_place }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </section>
+
+    {% endblock %}
+</body>
+</html>
